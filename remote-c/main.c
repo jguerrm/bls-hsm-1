@@ -15,14 +15,14 @@
 #include <sys/types.h>
 
 #include "../blst/bindings/blst.h"
-#include "../cli/include/common.h"
 
-#include "./httpRemote.h"
+#include "../lib/httpRemote.h"
 
-#include "../secure_module/zephyr/spm/src/main.c"
+#include "../lib/bls_hsm.h"
 
 #define PORT 8080
 #define SA struct sockaddr
+#define MAX 65535
 
 void func(int sockfd)
 {
